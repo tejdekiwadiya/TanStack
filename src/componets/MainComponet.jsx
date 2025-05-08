@@ -135,6 +135,7 @@ export const MainComponet = React.memo(() => {
          * @min false
          * @max true
          * Whether the query should run automatically.
+         * navigator.onLine = provide offile or online state of network
          */
         enabled: true,
 
@@ -216,7 +217,8 @@ export const MainComponet = React.memo(() => {
         retryDelay: 1000,
     });
 
-    console.log(status, "Query Result DeStructure", fetchStatus);
+    // console.log(isFetching, "Query", status ,"Result DeStructure", fetchStatus);
+    console.log(navigator.onLine, "navigator");
 
 
     const [show, setShow] = useState(false);

@@ -10,7 +10,9 @@ Modal.setAppElement('#root');
 
 
 function App() {
-  const queryClient = new QueryClient();
+  const queryClient = new QueryClient({
+    // mutationCache/
+  });
   return (
     <>
 
